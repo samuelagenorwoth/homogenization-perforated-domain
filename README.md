@@ -66,7 +66,7 @@ Writing $Y^*$ for one cell (the unit square) without its hole:
 - $F$ is the limit of the source over the material: $F = \theta\cos(2\pi x_1)$
   for $f_2$, and the constant $F = \int_{Y^*}\cos(2\pi y_1)\,dy$ for $f_1$,
 - $\mathbb{D}$ is the effective diffusion tensor,
-  $\mathbb{D}_{ik} = \int_{Y^*} \big(A(y)(e_k + \nabla w_k)\big)_i \,dy$,
+  $$\mathbb{D}_{ik} = \int_{Y^*} \big(A(y)(e_k + \nabla w_k)\big)_i \,dy$$,
   where the **cell problems** give $w_1, w_2$: periodic functions on $Y^*$ with
 
 ```math
