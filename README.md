@@ -126,7 +126,12 @@ expected rate for linear elements.
 | 16 | 1/16 | 0.029 | 1.06 | 0.027 | 1.24 |
 | 32 | 1/32 | 0.015 | 1.01 | 0.013 | 1.03 |
 
-The difference is $\Vert u_\varepsilon - u_0\Vert _{L^2(\Omega_\varepsilon)} / \Vert u_0\Vert _{L^2(\Omega_\varepsilon)}$.
+The table shows the relative difference
+
+```math
+\frac{\Vert u_\varepsilon - u_0 \Vert_{L^2(\Omega_\varepsilon)}}{\Vert u_0 \Vert_{L^2(\Omega_\varepsilon)}}.
+```
+
 It halves each time $\varepsilon$ is halved, the $O(\varepsilon)$ convergence
 predicted by homogenization theory. With 1024 holes ($N = 32$, about 925 000
 mesh nodes), the original solution is within 1.5 % of the homogenized one.
@@ -190,13 +195,15 @@ makes the figures in `figures/`.
 
 ## References
 
-1. D. Cioranescu and J. Saint Jean Paulin, "Homogenization in open sets with
+1. Muntean, A. "A Course in Homogenization-based Techniques: Multiscale
+   Modeling and Asympotic Analysis." Lecture notes Karlstad University, 2023.
+2. D. Cioranescu and J. Saint Jean Paulin, "Homogenization in open sets with
    holes", *Journal of Mathematical Analysis and Applications* 71, 590–607, 1979.
-2. G. Allaire, "Homogenization and two-scale convergence", *SIAM Journal on
+3. G. Allaire, "Homogenization and two-scale convergence", *SIAM Journal on
    Mathematical Analysis* 23(6), 1482–1518, 1992.
-3. D. Cioranescu and P. Donato, *An Introduction to Homogenization*, Oxford
+4. D. Cioranescu and P. Donato, *An Introduction to Homogenization*, Oxford
    University Press, 1999.
-4. W. T. Perrins, D. R. McKenzie and R. C. McPhedran, "Transport properties of
+5. W. T. Perrins, D. R. McKenzie and R. C. McPhedran, "Transport properties of
    regular arrays of cylinders", *Proceedings of the Royal Society of London A*
    369, 207–225, 1979.
 
