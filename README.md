@@ -15,12 +15,12 @@ This started as a group project in the course *MAAD28 Homogenization:
 Multiscale Modeling, Analysis and Simulation* at Karlstad University, Sweden
 (autumn 2023, presented on 11 January 2024), by
 
-- Samuel Agenorwoth
-- John Success Lazarus
-- Ayoola Arinola Ayorinde
-- Maoni Ngowa Msinda
-- Hannah Abosede Esinoye
-- Md Abdul Gafur
+- [Samuel Agenorwoth](https://www.linkedin.com/in/samuel-agenorwoth-b30828216)
+- [John Success Lazarus](https://www.linkedin.com/in/john-lazarus-040b89195/)
+- [Ayoola Arinola Ayorinde](https://www.linkedin.com/in/ayoola-ayorinde-8b5a881a3/)
+- [Maoni Ngowa Msinda](https://www.linkedin.com/in/maoni-msinda-5285bb1b0/)
+- [Hannah Abosede Esinoye](https://www.linkedin.com/in/hannah-esinoye-632521256/)
+- [Md Abdul Gafur](https://www.linkedin.com/in/md-abdul-gafur-339155297/)
 
 The group derived the homogenized problem by two-scale convergence and
 simulated the original problem in FEniCS and the homogenized one in COMSOL.
