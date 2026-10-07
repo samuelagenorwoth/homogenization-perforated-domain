@@ -56,20 +56,22 @@ As $\varepsilon \to 0$, $u_\varepsilon$ converges to the solution $u_0$ of a
 problem on the full square, without holes and with constant coefficients:
 
 ```math
--\mathrm{div}(\mathbb{D}\nabla u_0) + \theta\, u_0 = F \ \text{ in } (0,1)^2, \qquad
-u_0 = 0 \ \text{ on the boundary.}
+-\mathrm{div}(\mathbb{D}\nabla u_0) + \theta\, u_0 = F \ \text{ in } (0,1)^2, \qquad u_0 = 0 \ \text{ on the boundary.}
 ```
 
-Writing $Y^*$ for one cell (the unit square) without its hole:
+Writing $Y^*$ for one cell (the unit square) without its hole, the
+homogenized problem has three ingredients:
 
-- $\theta = |Y^*| = 1 - \pi/16$ is the fraction of material that is not hole,
-- $F$ is the limit of the source over the material: $F = \theta\cos(2\pi x_1)$
-  for $f_2$, and the constant $F = \int_{Y^*}\cos(2\pi y_1)\,dy$ for $f_1$,
-- $\mathbb{D}$ is the effective diffusion tensor,
-  ```math
-  $$\mathbb{D}_{ik} = \int_{Y^*} \big(A(y)(e_k + \nabla w_k)\big)_i \,dy$$,
-  ```
-  where the **cell problems** give $w_1, w_2$: periodic functions on $Y^*$ with
+- the volume fraction $\theta = 1 - \pi/16 \approx 0.80$, the part of each cell that is material,
+- the source $F$: $F = \theta \cos(2\pi x_1)$ for $f_2$, and for $f_1$ the constant
+  average of $\cos(2\pi y_1)$ over $Y^*$,
+- the effective diffusion tensor
+
+```math
+\mathbb{D}_{ik} = \int_{Y^*} \big( A(y)\,(e_k + \nabla_y w_k) \big)_i \, dy, \qquad i, k = 1, 2,
+```
+
+where $w_1$ and $w_2$ solve the **cell problems**: they are periodic on $Y^*$ and
 
 ```math
 -\mathrm{div}_y\!\big(A(y)(e_k + \nabla_y w_k)\big) = 0 \ \text{ in } Y^*, \qquad
