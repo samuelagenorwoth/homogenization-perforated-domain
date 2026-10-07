@@ -56,7 +56,8 @@ As $\varepsilon \to 0$, $u_\varepsilon$ converges to the solution $u_0$ of a
 problem on the full square, without holes and with constant coefficients:
 
 ```math
--\mathrm{div}(\mathbb{D}\nabla u_0) + \theta\, u_0 = F \ \text{ in } (0,1)^2, \qquad u_0 = 0 \ \text{ on the boundary.}
+-\mathrm{div}(\mathbb{D}\nabla u_0) + \theta\, u_0 = F \ \text{ in } (0,1)^2, \qquad
+u_0 = 0 \ \text{ on the boundary.}
 ```
 
 Writing $Y^*$ for one cell (the unit square) without its hole:
