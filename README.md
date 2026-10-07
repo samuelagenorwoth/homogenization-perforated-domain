@@ -33,19 +33,19 @@ The domain $\Omega_\varepsilon$ is the unit square with $N \times N$ circular
 holes: the square is divided into cells of size $\varepsilon = 1/N$, and each
 cell has a hole of radius $\varepsilon/4$ in its middle. On it we solve
 
-$$
--\operatorname{div}\!\left(A\!\left(\tfrac{x}{\varepsilon}\right)\nabla u_\varepsilon\right) + u_\varepsilon = f_\varepsilon \ \text{ in } \Omega_\varepsilon, \qquad
+```math
+-\mathrm{div}\!\left(A\!\left(\tfrac{x}{\varepsilon}\right)\nabla u_\varepsilon\right) + u_\varepsilon = f_\varepsilon \ \text{ in } \Omega_\varepsilon, \qquad
 A\!\left(\tfrac{x}{\varepsilon}\right)\nabla u_\varepsilon \cdot n = 0 \ \text{ on the holes}, \qquad
 u_\varepsilon = 0 \ \text{ on the outer boundary,}
-$$
+```
 
 with the coefficient matrix and the two sources of the original project:
 
-$$
+```math
 A(y) = \begin{pmatrix} 3 + \cos 2\pi y_1 & 0 \\ 0 & 3 + \cos 2\pi y_2 \end{pmatrix}, \qquad
 f_1 = \cos\frac{2\pi x_1}{\varepsilon}, \qquad
 f_2 = \cos(2\pi x_1) + \varepsilon \sin\frac{2\pi x_1}{\varepsilon}.
-$$
+```
 
 The coefficient oscillates on the scale of the cells, and nothing can flow
 through the holes.
@@ -55,9 +55,9 @@ through the holes.
 As $\varepsilon \to 0$, $u_\varepsilon$ converges to the solution $u_0$ of a
 problem on the full square, without holes and with constant coefficients:
 
-$$
--\operatorname{div}(\mathbb{D}\nabla u_0) + \theta\, u_0 = F \ \text{ in } (0,1)^2, \qquad u_0 = 0 \ \text{ on the boundary.}
-$$
+```math
+-\mathrm{div}(\mathbb{D}\nabla u_0) + \theta\, u_0 = F \ \text{ in } (0,1)^2, \qquad u_0 = 0 \ \text{ on the boundary.}
+```
 
 Writing $Y^*$ for one cell (the unit square) without its hole:
 
@@ -68,10 +68,10 @@ Writing $Y^*$ for one cell (the unit square) without its hole:
   $\mathbb{D}_{ik} = \int_{Y^*} \big(A(y)(e_k + \nabla w_k)\big)_i \,dy$,
   where the **cell problems** give $w_1, w_2$: periodic functions on $Y^*$ with
 
-$$
--\operatorname{div}_y\!\big(A(y)(e_k + \nabla_y w_k)\big) = 0 \ \text{ in } Y^*, \qquad
+```math
+-\mathrm{div}_y\!\big(A(y)(e_k + \nabla_y w_k)\big) = 0 \ \text{ in } Y^*, \qquad
 A(y)(e_k + \nabla_y w_k)\cdot n = 0 \ \text{ on the hole.}
-$$
+```
 
 ## Method
 
@@ -121,7 +121,7 @@ expected rate for linear elements.
 | 16 | 1/16 | 0.029 | 1.06 | 0.027 | 1.24 |
 | 32 | 1/32 | 0.015 | 1.01 | 0.013 | 1.03 |
 
-The difference is $\|u_\varepsilon - u_0\|_{L^2(\Omega_\varepsilon)} / \|u_0\|_{L^2(\Omega_\varepsilon)}$.
+The difference is $\Vert u_\varepsilon - u_0\Vert _{L^2(\Omega_\varepsilon)} / \Vert u_0\Vert _{L^2(\Omega_\varepsilon)}$.
 It halves each time $\varepsilon$ is halved, the $O(\varepsilon)$ convergence
 predicted by homogenization theory. With 1024 holes ($N = 32$, about 925 000
 mesh nodes), the original solution is within 1.5 % of the homogenized one.
